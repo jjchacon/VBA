@@ -1,0 +1,12 @@
+Columns("S:S").Select
+Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
+Range("S6").Select
+ActiveCell.FormulaR1C1 = "Period" 
+Range("S7").Select
+Range("S7").Select
+ActiveCell.FormulaR1C1 = "=TEXT(RC[-1],""mmm"")&""-""&TEXT(RC[-1],""yyyy"")"
+Range("S7").Select
+Selection.Copy
+Range("S8").Select 
+Range(Selection, Selection.End(xlDown)).Select
+ActiveSheet.Paste
