@@ -3,7 +3,6 @@ Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
 Range("S6").Select
 ActiveCell.FormulaR1C1 = "Period" 
 Range("S7").Select
-Range("S7").Select
 ActiveCell.FormulaR1C1 = "=TEXT(RC[-1],""mmm"")&""-""&TEXT(RC[-1],""yyyy"")"
 Range("S7").Select
 Selection.Copy
