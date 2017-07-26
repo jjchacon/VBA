@@ -1,3 +1,7 @@
+
+Sub ProductionReportDateFormatt()
+'ProductionReportDateFormatt Macro
+
 Columns("S:S").Select
 Selection.Insert Shift:=xlToRight, CopyOrigin:=xlFormatFromLeftOrAbove
 Range("S6").Select
@@ -9,3 +13,17 @@ Selection.Copy
 Range("S8").Select 
 Range(Selection, Selection.End(xlDown)).Select
 ActiveSheet.Paste
+
+End Sub
+------------------------------------------------------
+Sub RenameWorkSheets()
+'Rename Worksheets
+
+Sheets("Sheet1").Name = "PuertoRico"
+Sheets("Sheet2").Name = "I.I."
+Sheets("Sheet3").Name = "CAHA"
+Sheets("Sheet4").Name = "NH.PR"
+Sheets("Sheet5").Name = "CB.DL"
+
+End Sub
+-------------------------------------------------------
